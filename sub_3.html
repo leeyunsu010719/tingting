@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <title>Document</title>
+    <!--favicon  -->
+    <link rel="shortcut icon" href="images/favicon.svg">
+    <!-- css -->
+    <link rel="stylesheet" href="css/sub_3_style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="inner_header">
+                <h1><a href="index.html"><img src="./images/logo.svg" alt="logo"></a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="sub_1.html">ABOUT</a></li>
+                        <li><a href="sub_2.html">MENU</a></li>
+                        <li><a href="sub_3.html">STORE</a></li>
+                        <li><a href="sub_4.html">EVENT</a></li>
+                        <li><a href="sub_5.html">CONTACT</a></li>
+                    </ul>
+                    <div class="submenu">
+                        <div class="inner_submenu">
+                            <ul>
+                                <li class="brand_story"><a href="sub_1.html">BRAND STORY</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="sub_2.html">NEW</a></li>
+                                <li><a href="sub_2.html">BEST</a></li>
+                                <li><a href="sub_2.html">TOAST</a></li>
+                                <li><a href="sub_2.html">OTHER</a></li>
+                                <li><a href="sub_2.html">DRINK</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="sub_3.html">STORE</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="sub_4.html">EVENT</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="sub_5.html">FAQ</a></li>
+                                <li><a href="sub_5.html">NEWS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="banner_wrap">
+            <div id="banner">
+                <img src="./images/store/banner.png" alt="">
+            </div>
+        </div>
+        <div id="section1">
+            <h2 data-aos="fade-up">STORE</h2>
+            <p class="sec_title">나와 가까운 매장을 검색해보세요.</p>
+            <img class="toting" data-aos="fade-up" data-aos-delay="300" src="./images/store/tingting_search.png" alt="">
+            <div class="search_cover">
+                <div class="select_wrap">
+                    <div class="select_btn">
+                        <p id="select">지역 선택</p>
+                        <span class="plus">
+                            <img src="images/store/scroll.png" alt="scroll">
+                        </span>
+                    </div>
+                    <div id="option">
+                        <p onclick="option1()"><a href="javascript:return false;">부산시</a></p>
+                    </div>
+                </div>
+                <div class="select_wrap">
+                    <div class="select_btn">
+                        <p id="select2">구/군 선택</p>
+                        <span class="plus">
+                            <img src="images/store/scroll.png" alt="scroll">
+                        </span>
+                    </div>
+                    <div id="option2">
+                        <p onclick="option2()"><a href="javascript:return false;">부산진구 전포동</a></p>
+                        <p onclick="option3()"><a href="javascript:return false;">북구 화명동</a></p>
+                    </div>
+                </div>
+                <div class="search_wrap">
+                    <input type="search" placeholder="매장명">
+                    <img class="search_img" src="./images/store/search.png" alt="">
+                </div>
+                <div class="click click_store">
+                    <a href="#">Start ></a>
+                </div>
+            </div>
+            <div class="map">
+                <img src="./images/store/map_1.jpg" alt="" data-aos="fade-up" data-aos-duration="1000">
+            </div>
+            <div class="pin">
+                <img src="./images/store/map_pin.png" alt="" data-aos="fade-in">
+                <img src="./images/store/speech_bubble.png" alt="" data-aos="fade-up" data-aos-delay="300">
+            </div>
+            <div class="sec1_text_box" data-aos="fade-up" data-aos-delay="700">
+                <h4>서면 본점</h4>
+                <p>부산광역시 신천대로 7</p>
+                <div class="click click_store2">
+                    <a href="#">Order ></a>
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <h2 data-aos="fade-up">REVIEW</h2>
+            <p class="sec_title">TING TING과 함께한 기억을 알려주세요. </p>
+            <!-- Swiper -->
+            <div id="swiper_cover" data-aos="fade-up" data-aos-duration="1400">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide profile_cover">
+                            <div class="profile_box">
+                                <div class="profile_wrap">
+                                    <div>
+                                        <img src="./images/store/profile1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="review_name">토팅이</p>
+                                        <p class="review_id">@toting123</p>
+                                    </div>
+                                </div>
+                                <img src="./images/store/review_img1.jpg" alt="">
+                                <p class="text_box">팅팅 토스트가 시그니처 메뉴이길래 시켜봤는데 너무맛있게 잘 먹었습니다 ! 야채도 싱싱하고 빵도 퐁신하고
+                                    기분이
+                                    좋아지는
+                                    맛이었어요 ㅎㅎ 패키지도 귀엽고 무엇보다 캐릭터가 너무
+                                    귀여워서 자주 사먹을 것 같아용 내일은 다른 메뉴로 또 먹어보겠습니다 간단한 식사 고민 중이시라면 꼭 먹어보세요 !!</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide profile_cover">
+                            <div class="profile_box">
+                                <div class="profile_wrap">
+                                    <div>
+                                        <img src="./images/store/profile2.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="review_name">냠냐리냠냠</p>
+                                        <p class="review_id">@dldbstn719</p>
+                                    </div>
+                                </div>
+                                <img src="./images/store/review_img2.jpg" alt="">
+                                <p class="text_box">매일 자극적인 음식만 먹다가 건강한 음식이 먹고 싶어져서 친구들이랑 시켜봤습니다
+                                    재료들도 신선해보이고 시중에 판매하는 다른 샐러드보다 가격이 훨씬 저렴해서 좋았습니다
+                                    다음에도 또 먹고싶어요 !</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide profile_cover">
+                            <div class="profile_box">
+                                <div class="profile_wrap">
+                                    <div>
+                                        <img src="./images/store/profile3.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="review_name">배고파</p>
+                                        <p class="review_id">@hungry_1027</p>
+                                    </div>
+                                </div>
+                                <img src="./images/store/review_img3.png" alt="">
+                                <p class="text_box">끼니 때울 간단하고 저렴한 음식 찾고 있었는데 집 앞에 토스트 브런치집이 생겨서 주문했어요 !
+                                    배달 왔을때도 갓 만든 것처럼 따끈했고 은근 포만감도 컸습니다 ㅎㅎ
+                                    이렇게나 싼데도 너무 맛있어서 종종 생각날 것 같아요 ^3^</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide profile_cover">
+                            <div class="profile_box">
+                                <div class="profile_wrap">
+                                    <div>
+                                        <img src="./images/store/profile1.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="review_name">토팅이</p>
+                                        <p class="review_id">@toting123</p>
+                                    </div>
+                                </div>
+                                <img src="./images/store/review_img1.jpg" alt="">
+                                <p class="text_box">팅팅 토스트가 시그니처 메뉴이길래 시켜봤는데 너무맛있게 잘 먹었습니다 ! 야채도 싱싱하고 빵도 퐁신하고
+                                    기분이
+                                    좋아지는
+                                    맛이었어요 ㅎㅎ 패키지도 귀엽고 무엇보다 캐릭터가 너무
+                                    귀여워서 자주 사먹을 것 같아용 내일은 다른 메뉴로 또 먹어보겠습니다 간단한 식사 고민 중이시라면 꼭 먹어보세요 !!</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide profile_cover">
+                            <div class="profile_box">
+                                <div class="profile_wrap">
+                                    <div>
+                                        <img src="./images/store/profile2.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="review_name">냠냐리냠냠</p>
+                                        <p class="review_id">@dldbstn719</p>
+                                    </div>
+                                </div>
+                                <img src="./images/store/review_img2.jpg" alt="">
+                                <p class="text_box">매일 자극적인 음식만 먹다가 건강한 음식이 먹고 싶어져서 친구들이랑 시켜봤습니다
+                                    재료들도 신선해보이고 시중에 판매하는 다른 샐러드보다 가격이 훨씬 저렴해서 좋았습니다
+                                    다음에도 또 먹고싶어요 !</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide profile_cover">
+                            <div class="profile_box">
+                                <div class="profile_wrap">
+                                    <div>
+                                        <img src="./images/store/profile3.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="review_name">배고파</p>
+                                        <p class="review_id">@hungry_1027</p>
+                                    </div>
+                                </div>
+                                <img src="./images/store/review_img3.png" alt="">
+                                <p class="text_box">끼니 때울 간단하고 저렴한 음식 찾고 있었는데 집 앞에 토스트 브런치집이 생겨서 주문했어요 !
+                                    배달 왔을때도 갓 만든 것처럼 따끈했고 은근 포만감도 컸습니다 ㅎㅎ
+                                    이렇게나 싼데도 너무 맛있어서 종종 생각날 것 같아요 ^3^</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="inner_footer">
+                <div class="footer_box">
+                    <h1 class="logo_wrap">
+                        <a href="#"><img src="./images/logo.svg" alt=""></a>
+                    </h1>
+                    <div>
+                        <ul class="util">
+                            <li><a href="#">개인정보처리방침 </a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                        <ul>
+                            <li>CEO : 이윤수 | ADRESS : 부산광역시 부산진구 신천대로7
+                            </li>
+                            <li>사업자등록번호 : 000-00-00000 <a href="#">[사업자번호조회]</a>
+                            </li>
+                            <li>TEL: 010-4329-4758 | E-MAIL: dldbstn719@naver.com</li>
+                            <li>Copyright© TINGTING. All Rights Reserved</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="sns">
+                    <li><a href="#"><img src="./images/footer/instargram.png" alt=""></a></li>
+                    <li><a href="#"><img src="./images/footer/youtube.png" alt=""></a></li>
+                    <li><a href="#"><img src="./images/footer/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="./images/footer/x_twitter.png" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- aos js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- submenu -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $('.submenu').hide();
+            $('nav').mouseenter(function () {
+                $('.submenu').stop().slideDown()
+            });
+            $('nav').mouseleave(function () {
+                $('.submenu').stop().slideUp()
+            });
+        </script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+        <!-- 셀렉트옵션 -->
+        <script>
+            $("#option").hide();
+            $("#select").click(function () {
+                $("#option").toggle()
+            });
+            function option1() {
+                document.getElementById("select").innerHTML = '부산시'
+                $("#option").hide()
+            }
+        </script>
+        <script>
+            $("#option2").hide();
+            $("#select2").click(function () {
+                $("#option2").toggle()
+            });
+            function option2() {
+                document.getElementById("select2").innerHTML = '부산진구 전포동'
+                $("#option2").hide()
+            }
+            function option3() {
+                document.getElementById("select2").innerHTML = '북구 화명동'
+                $("#option2").hide()
+            }
+        </script>
+        <!-- 오픈소스 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </div>
+</body>
+
+</html>
